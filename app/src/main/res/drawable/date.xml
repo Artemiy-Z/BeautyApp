@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/down_arrow"
+        android:height="10dp"
+        android:width="19dp"
+        android:gravity="end|center_vertical"
+        android:end="15dp" />
+    <item android:drawable="@drawable/date_icon"
+        android:height="11dp"
+        android:width="11dp"
+        android:gravity="start|center_vertical"
+        android:start="14dp" />
+</layer-list>

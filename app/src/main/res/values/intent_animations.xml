@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <style name="PageChangerUp" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/page_change_to_up_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/page_change_to_up_exit</item>
+    </style>
+
+    <style name="PageChangeActivity" parent="Theme.BeautyApp">
+        <item name="android:windowAnimationStyle">@style/PageChangerUp</item>
+    </style>
+    
+</resources>

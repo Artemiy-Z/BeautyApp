@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BeautyApp</string>
+    <string name="regtext"><u>Регистрация</u></string>
+    <string name="signtext"><u>Уже есть аккаунт</u></string>
+</resources>

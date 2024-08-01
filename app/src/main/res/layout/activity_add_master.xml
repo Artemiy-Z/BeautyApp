@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/shadow_gradient"
+
+android:id="@+id/main_cont"
+    tools:context=".AddMasterActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/avatar_image"
+                    android:layout_width="168dp"
+                    android:layout_height="168dp"
+                    android:foreground="@drawable/circle_foreground"
+                    android:foregroundTint="@color/pink2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/noavatar"
+                    app:shapeAppearance="@style/ShapeCircle"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageButton
+                    android:id="@+id/loadimage"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/loadimage"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/portfolio"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="Портфолио"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2_tr"
+                android:hint="Имя"
+                android:paddingStart="16dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="24sp" />
+
+            <Spinner android:id="@+id/prof"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2_tr"
+                android:foreground="@drawable/spinner"
+                android:layout_marginHorizontal="16dp"
+                android:spinnerMode="dropdown"
+                android:popupBackground="@color/pink2_tr"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2">
+
+                <ImageButton
+                    android:background="@android:color/transparent"
+                    android:id="@+id/pencil"
+                    android:layout_width="76dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pencil_xml"
+                    android:scaleType="fitXY"
+                    android:textColor="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <RelativeLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/pink1"
+                    app:layout_constraintEnd_toStartOf="@id/pencil" />
+
+                <TextView
+                    android:id="@+id/plan"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="Расписание: нет"
+                    android:paddingStart="16dp"
+                    android:textColor="@color/white"
+                    android:gravity="center_vertical"
+                    android:textColorHint="@color/white"
+                    android:textSize="24sp"
+                    app:layout_constraintEnd_toStartOf="@id/pencil"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:text="Добавить"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/back"
+        android:src="@drawable/back_arrow"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16.25dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

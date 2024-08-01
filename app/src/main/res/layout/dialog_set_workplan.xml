@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/pink2_tr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Укажите рабочие дни"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Пн"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/vt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Вт"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sr"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Ср"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/ct"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Чт"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pt"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Пт"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/sb"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Сб"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/vs"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Вс"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/positive"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Готово"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/box16"
+                android:backgroundTint="@color/pink2"
+                android:text="Отмена"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

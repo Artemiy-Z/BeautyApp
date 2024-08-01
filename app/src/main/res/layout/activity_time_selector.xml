@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/shadow_gradient"
+
+android:id="@+id/main_cont"
+    tools:context=".TimeSelectorActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Укажите\nВремя"
+                android:textAlignment="center"
+                android:textColor="@color/pink2"
+                android:textSize="32sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="Утром"
+                android:textColor="@color/pink3"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_1"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="09:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="10:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_3"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="11:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:paddingStart="20dp"
+                android:text="Днём"
+                android:textColor="@color/pink3"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_4"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="13:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_5"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="14:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_6"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="15:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_7"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="16:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_8"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="17:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_9"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="18:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:paddingStart="20dp"
+                android:text="Вечером"
+                android:textColor="@color/pink3"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingHorizontal="8dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_10"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="19:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_11"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="20:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_12"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/box6"
+                    android:text="21:00"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:background="@drawable/roubox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/create_order"
+        android:textSize="24sp"
+        android:text="Записать меня!"
+        android:alpha="0.6"
+        android:textColor="@color/white"
+        android:textAllCaps="false" />
+
+    <ImageButton
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/back"
+        android:src="@drawable/back_arrow"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16.25dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

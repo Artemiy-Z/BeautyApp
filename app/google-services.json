@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672002790458",
+    "project_id": "beauty-d4ba8",
+    "storage_bucket": "beauty-d4ba8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672002790458:android:32b4f60d03216b22179103",
+        "android_client_info": {
+          "package_name": "com.example.beautyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672002790458-73h79n10bk1rt6b06471ccaivb280laf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCyVNHCpu9sMgUyx8vIwf-TRTAApKzxOUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672002790458-73h79n10bk1rt6b06471ccaivb280laf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/shadow_gradient"
+
+android:id="@+id/main_cont"
+    tools:context=".AdminActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Для\nадминистратора"
+            android:gravity="center_horizontal"
+            android:textColor="@color/pink1"
+            android:textSize="36sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/add_master"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="157dp"
+            android:background="@drawable/box16"
+            android:backgroundTint="@color/pink2"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Добавить нового сотрудника"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/masters"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/box16"
+            android:backgroundTint="@color/pink2"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Мои мастера"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/back"
+        android:src="@drawable/back_arrow"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16.25dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

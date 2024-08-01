@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:foreground="@drawable/shadow_gradient"
+
+android:id="@+id/main_cont">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background"
+        android:scaleType="centerCrop"
+        android:background="#EEEEEE" />
+
+    <LinearLayout android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="168dp"
+            android:layout_height="168dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:textSize="36sp"
+            android:textColor="@color/pink1"
+            android:text="Вход в аккаунт"
+            android:layout_marginTop="27dp"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/box16"
+            android:backgroundTint="@color/pink2_tr"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="40dp">
+            
+            <TextView
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:id="@+id/region"
+                android:textColor="@color/white"
+                android:text="+7"
+                android:gravity="center"
+                android:textSize="24sp"/>
+            
+            <RelativeLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/pink2"
+                app:layout_constraintEnd_toEndOf="@id/region"/>
+
+            <EditText android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toEndOf="@id/region"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@android:color/transparent"
+                android:hint="Номер телефона"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:paddingStart="16dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <EditText android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/box16"
+            android:backgroundTint="@color/pink2_tr"
+            android:layout_marginHorizontal="16dp"
+            android:hint="Пароль"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:paddingStart="16dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"/>
+
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/box16"
+            android:backgroundTint="@color/pink2"
+            android:layout_marginHorizontal="16dp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:text="Войти"
+            android:textAllCaps="false"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="24sp"
+            android:textColor="@color/pink1"
+            android:text="Нет аккаунта?" />
+
+        <TextView android:id="@+id/variant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="@color/pink3"
+            android:text="@string/regtext" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

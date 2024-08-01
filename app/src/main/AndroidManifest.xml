@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_main_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BeautyApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".OrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimeSelectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HaircutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MassageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManiqureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MakiashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FaceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EpilationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaintActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMastersViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MastersViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditPortfolioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserPortfolioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddMasterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditMasterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PasswordChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CatalogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false"
+            android:theme="@style/PageChangeActivity" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

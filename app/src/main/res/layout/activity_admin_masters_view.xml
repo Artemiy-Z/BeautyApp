@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="@drawable/shadow_gradient"
+
+android:id="@+id/main_cont"
+    tools:context=".AdminMastersViewActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Мои мастера"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/pink1"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:id="@+id/linear_haircut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Парикмахеры"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_massage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Массажисты"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_spa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Мастера Спа"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_face"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Уход за лицом"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_maniqure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Маникюр"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_makiash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Макияж"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_epilation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Эпиляция"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_paint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Покраска волос"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/pink1"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:id="@+id/back"
+        android:src="@drawable/back_arrow"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16.25dp"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

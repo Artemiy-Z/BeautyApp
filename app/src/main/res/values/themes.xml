@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.BeautyApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/pink1</item>
+        <item name="colorPrimaryVariant">@color/pink2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pink3</item>
+        <item name="colorSecondaryVariant">@color/pink4</item>
+        <item name="colorOnSecondary">@color/pink5</item>
+        <!-- Customize your theme here. -->
+        <item name="android:textViewStyle">@style/DefaultText</item>
+        <item name="editTextStyle">@style/EditText</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.MaterialDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="colorPrimary">@color/pink2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="colorPrimaryVariant">@color/pink2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pink3</item>
+        <item name="colorSecondaryVariant">@color/pink4</item>
+        <item name="colorOnSecondary">@color/pink5</item>
+        <item name="android:textColor">@color/pink3</item>
+    </style>
+    
+    <style name="DefaultText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/pink1</item>
+        <item name="fontFamily">@font/imprima_regular</item>
+    </style>
+
+    <style name="Splash" parent="Theme.BeautyApp">
+
+        <item name="android:windowBackground">@drawable/splash_bg</item>
+        <item name="android:windowAnimationStyle">@style/PageChangerUp</item>
+
+    </style>
+
+    <style name="ShapeCircle" parent="Theme.BeautyApp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeBox" parent="Theme.BeautyApp">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    
+    <style name="EditText" parent="@android:style/Widget.EditText">
+        <item name="android:importantForAutofill">no</item>
+    </style>
+</resources>
